@@ -15,7 +15,8 @@ public class Utils {
 
     static {
         try {
-            config.load(Utils.class.getResourceAsStream("/config.properties"));
+            config.load(Utils.class.getResourceAsStream("/config.properties"));//jdk8中没有load的用发了
+            
         } catch (IOException e) {
             e.printStackTrace();
         }
